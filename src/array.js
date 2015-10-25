@@ -31,11 +31,29 @@
         collection : ArrayCollection
     };
 
-    function singleize(array, key) {
+    function isArray(object) {
+        return Object.prototype.toString.call(object) === '[object Array]';
     }
 
     ArrayCollection.singleize = function(array) {
-        return singleize(array);
+        var a = [];
+
+        for (var i = 0, len = array.length; i < len; ++i) {
+            var entry = array[i];
+
+            a[i] = entry;
+
+            if (isArray(entry)) {
+                if (entry.length === 0) {
+                    a[i] = null;
+                }
+                if (entry.length === 1) {
+                    a[i] = entry[0];
+                }
+            }
+        }
+
+        return a;
     };
 
     return ArrayCollection
