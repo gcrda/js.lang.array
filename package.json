@@ -1,0 +1,31 @@
+{
+  "name": "js.lang.array",
+  "version": "0.0.0",
+  "description": "Universal Array class",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp --gulpfile tasks"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gcrda/js.lang.array.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcrda/js.lang.array/issues"
+  },
+  "homepage": "https://github.com/gcrda/js.lang.array#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-jsdoc-to-markdown": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.7"
+  }
+}
